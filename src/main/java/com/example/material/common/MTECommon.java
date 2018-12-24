@@ -10,7 +10,7 @@ public class MTECommon {
 
 	public static final int INT_RECIEVE_ITEMS_OF_PAGE = 20;
 
-	public static final int INT_TEST = 20;
+	public static final int INT_TEST = 30;
 
 	// constant string
 	
