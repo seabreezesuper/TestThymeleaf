@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<HEAD>
+<LINK href="css/TEASCommon.css" rel="stylesheet" type="text/css">
+<LINK href="css/login.css" rel="stylesheet" type="text/css">
+<SCRIPT language=JavaScript src="js/material.js" type=text/javascript></SCRIPT>
+<TITLE>物料EKanban管理系统登录页面</TITLE>
+</HEAD>
+
+<BODY onkeydown="doLoginKeyDown()">  
+<div class="form-wrapper">
+  <h1>登录页面</h1>
+
+  <form name="loginForm" action="/login" method="post">
+    <div class="form-item">
+      <label for="userId">用户ID：</label>
+      <input type="text" name="userId" required="required" placeholder="User ID"></input>
+    </div>
+    <div class="form-item">
+      <label for="password">密码：</label>
+      <input type="password" name="password" required="required" placeholder="Password"></input>
+    </div>
+    <div class="button-panel">
+      <input type="submit" class="button" title="登录" value="登录" ></input>
+    </div>
+     <div class="form-footer">
+     </div>
+  </form>
+</div>
+
+</BODY>
+
+</HTML>

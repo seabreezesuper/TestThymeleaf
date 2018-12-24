@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<HEAD>
+<LINK href="/css/TEASCommon.css" rel="stylesheet" type="text/css">
+<LINK href="/css/error.css" rel="stylesheet" type="text/css">
+<SCRIPT language=JavaScript src="js/jquery-1.8.2.min.js" type=text/javascript></SCRIPT>
+<SCRIPT language=JavaScript src="js/material.js" type=text/javascript></SCRIPT>
+<TITLE>菜单页面</TITLE>
+</HEAD>
+
+<BODY>  
+<div id="errorBox">
+    <ul>
+    	<li class="msg"><p th:text="'恭喜登陆成功！您的名字是：'+ ${loginusername}" /></li>
+    	<li><input type="button" value="返回登录页面" onclick="gotoLogin()"/></li>
+    </ul>
+</div> 
+</BODY>
+
+</HTML>

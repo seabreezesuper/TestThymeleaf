@@ -1,0 +1,21 @@
+#errorBox {
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin:-150px 0 0 -200px;
+	width:400px;
+	height:300px;
+    
+    text-align: center;
+	line-height: 25px;	
+	font-size: 14px;
+}
+
+#errorBox li {
+	list-style-type: none;
+}
+
+#errorBox .msg {
+	color:red;
+	margin-bottom:20px;
+}

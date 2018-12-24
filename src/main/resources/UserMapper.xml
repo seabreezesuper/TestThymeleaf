@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.material.mapper.UserMapper" >
+ <resultMap id="UserResult" type="com.example.material.entity.User" >
+   <result column="user_id" property="userId" />
+   <result column="user_name" property="userName" />
+ </resultMap>
+
+ <select id="getUser" resultMap="UserResult" parameterType="int" >
+   select user_id,user_name
+   from mte_user
+   where user_id = #{0} and password = #{1} limit 1
+ </select>
+</mapper>
